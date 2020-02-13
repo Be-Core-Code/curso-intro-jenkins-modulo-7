@@ -3,6 +3,7 @@
 #### Ejecuciones distribuidas
 
 * [Introducción](/#introduction)
+* [Añadir nodos mediante SSH](/#add_nodes_ssh)
  
 notes:
 
