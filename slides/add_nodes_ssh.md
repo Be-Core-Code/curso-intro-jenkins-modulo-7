@@ -165,3 +165,9 @@ notes:
 Si los credenciales son correctos y no hay problemas de conectividad, veremos esta pantalla.
 
 A la izquierda vemos que ya tenemos disponibles los dos nuenos `Executors` disponibles en el agente.
+
+^^^^^^
+
+#### Añadir nodos Windows con SSH
+
+Es posible añadir nodos con el sistema operativo Windows utilizando `cygwin` ([Más información](https://wiki.jenkins.io/display/JENKINS/SSH+slaves+and+Cygwin))

@@ -4,6 +4,7 @@
 
 * [Introducción](/#introduction)
 * [Añadir nodos mediante SSH](/#add_nodes_ssh)
+* [_Launch agent by connecting it to the master_](/#add_nodes_launch_agent_by_connecting_it_to_the_master)
  
 notes:
 
