@@ -1,7 +1,10 @@
 # Diapositivas del Curso de Introducción a Jenkins - Módulo 7: Ejecuciones distribuidas
 
 ## Índice
-
+* Introducción
+* Añadir nodos mediante SSH
+* _Launch agent by connecting it to the master_
+* Ejecuciones distribuidas
 
 ## Visualización
 
