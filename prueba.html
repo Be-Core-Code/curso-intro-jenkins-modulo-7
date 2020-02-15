@@ -1,0 +1,22 @@
+from traitlets import Unicode, Bool, validate, TraitError
+from ipywidgets import DOMWidget, register
+
+
+@register
+class Email(DOMWidget):
+_view_name = Unicode('EmailView').tag(sync=True)
+_view_module = Unicode('email_widget').tag(sync=True)
+_view_module_version = Unicode('0.1.0').tag(sync=True)
+
+# Attributes
+value = Unicode('example@example.com', help="The email value.").tag(sync=True)
+disabled = Bool(False, help="Enable or disable user changes.").tag(sync=True)
+
+# Basic validator for the email value
+@validate('value')
+def _valid_value(self, proposal):
+if proposal['value'].count("@") != 1:
+raise TraitError('Invalid email value: it must contain an "@" character')
+if proposal['value'].count(".") == 0:
+raise TraitError('Invalid email value: it must contain at least one "." character')
+return proposal['value']
